@@ -1,0 +1,435 @@
+@charset "UTF-8";
+/*-----------------------------Feuille de style--------------------------*/
+/*-------ON IMPORT LE RESET ET ON DECLARE LES VARIABLES REUTILISABLE----*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+h1, p {
+  color: white; }
+
+h1 {
+  font-size: 30px; }
+
+li {
+  list-style-type: none; }
+
+/* ----------------------------ON DEFINIT LES LARGEURS DES IMAGES----------------------------------------*/
+img[alt="velo"] {
+  width: 100%;
+  margin-top: 88px; }
+
+img[alt="param├®tre"] {
+  width: 32px; }
+
+/* ----------------------------ON DEFINIT LES LARGEURS DES IMAGES----------------------------------------*/
+.stop_float {
+  clear: both; }
+
+body {
+  background-color: black; }
+  body #top_page {
+    width: 100%;
+    height: 95px;
+    background-color: #1d1d1d;
+    position: fixed; }
+
+.row {
+  float: left; }
+  .row:nth-child(3) {
+    float: right; }
+
+/*------PARTI A GAUCHE DU HEADER-------*/
+#header_left {
+  height: 95px;
+  width: 14%; }
+  #header_left .nav_gauche {
+    float: left;
+    border-right: 2px solid #333333;
+    height: 95px; }
+    #header_left .nav_gauche:nth-child(2) {
+      border-right: none;
+      width: 107px;
+      padding-top: 25px; }
+    #header_left .nav_gauche:first-child {
+      width: 71px; }
+    #header_left .nav_gauche:nth-child(3) {
+      padding-top: 25px;
+      height: 69px; }
+    #header_left .nav_gauche img[alt="loupe"] {
+      margin-left: 15px;
+      padding-top: 23px; }
+
+/*------PARTI A GAUCHE DU HEADER-------*/
+/*------PARTI A DROITE DU HEADER-------*/
+.header_right {
+  width: 19%; }
+  .header_right .nav_gauche {
+    float: left;
+    border-right: 2px solid #333333;
+    height: 95px;
+    padding-left: 40px;
+    width: 75px; }
+    .header_right .nav_gauche:first-child {
+      width: 71px;
+      border-left: 2px solid #333333; }
+    .header_right .nav_gauche:last-child {
+      border-right: none; }
+    .header_right .nav_gauche .marge_haut {
+      margin-top: 21px; }
+
+/*------PARTI A DROITE DU HEADER-------*/
+/*------PARTI AU CENTRE DU HEADER-------*/
+#header_center {
+  width: 42%;
+  text-align: center;
+  padding-top: 27px; }
+
+/*------PARTI AU CENTRE DU HEADER-------*/
+/*------SECTION DESCRIPTIF (WHO WHE ARE)-----*/
+.section {
+  width: 100%;
+  background-color: white; }
+  .section #bloc_presentation {
+    width: 58%;
+    height: auto;
+    background-color: white;
+    margin: auto; }
+    .section #bloc_presentation #text {
+      width: 375px;
+      margin-left: 41px;
+      margin-top: 54px;
+      margin-right: 83px; }
+      .section #bloc_presentation #text #title_description {
+        font-size: 25px;
+        margin-bottom: 14px;
+        font-family: sans-serif;
+        text-transform: uppercase;
+        font-weight: bold; }
+      .section #bloc_presentation #text #color_black {
+        font-family: sans-serif;
+        color: black;
+        line-height: 18px; }
+    .section #bloc_presentation .style_button {
+      border: none;
+      border-radius: 25px;
+      background-color: #fc3a52;
+      color: white;
+      height: 43px;
+      width: 147px;
+      border-radius: 50px;
+      font-size: 17px;
+      margin-top: 44px; }
+    .section #bloc_presentation #titre_produits {
+      width: 100%;
+      margin: auto;
+      padding-bottom: 24px; }
+      .section #bloc_presentation #titre_produits #articles {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-family: sans-serif;
+        font-size: 31px;
+        margin-top: 63px; }
+
+/*------SECTION DESCRIPTIF (WHO WHE ARE)-----*/
+/*-----SECTION NEWSLETTER AVEC CHAMP DE FORMULAIRE------*/
+.section {
+  background-color: white;
+  width: 100%; }
+  .section #bloc_newsletter {
+    height: 258px;
+    width: 879px;
+    background-color: white;
+    margin: auto;
+    padding-bottom: 40px; }
+    .section #bloc_newsletter #titre_newsletter {
+      text-transform: uppercase;
+      font-size: 40px;
+      font-family: sans-serif;
+      color: black;
+      text-align: center;
+      padding-top: 28px; }
+    .section #bloc_newsletter #describe_newsletter {
+      color: black;
+      font-family: sans-serif;
+      text-align: center;
+      margin-top: 49px; }
+    .section #bloc_newsletter #input_newsletter {
+      border: none;
+      background-color: white;
+      color: black;
+      border-radius: 35px;
+      width: 450px;
+      height: 55px;
+      margin-left: 205px;
+      margin-top: 44px;
+      padding-left: 20px;
+      box-shadow: 0px 1px 28px silver;
+      -moz-box-shadow: 0px 1px 28px silver; }
+
+/*-----SECTION NEWSLETTER AVEC CHAMP DE FORMULAIRE------*/
+/*---------------------PARTIE FOOTER--------------------*/
+.section {
+  width: 100%; }
+  .section #bloc_footer {
+    background-color: #222222;
+    width: 100%;
+    margin: auto;
+    height: 292px; }
+    .section #bloc_footer .align_bottom {
+      float: left;
+      font-family: sans-serif;
+      margin-right: 110px;
+      margin-top: 53px; }
+      .section #bloc_footer .align_bottom:first-child {
+        width: 362px;
+        margin-left: 129px; }
+      .section #bloc_footer .align_bottom:nth-child(2) {
+        width: 147px; }
+      .section #bloc_footer .align_bottom:nth-child(3) {
+        width: 154px; }
+      .section #bloc_footer .align_bottom:last-child {
+        width: 188px; }
+      .section #bloc_footer .align_bottom .silver_light {
+        color: #787878;
+        margin-bottom: 16px; }
+        .section #bloc_footer .align_bottom .silver_light:first-child {
+          margin-top: 42px; }
+      .section #bloc_footer .align_bottom .silver_dark {
+        color: #616161;
+        float: left;
+        margin-bottom: 28px;
+        margin-right: 28px; }
+      .section #bloc_footer .align_bottom .align_logo {
+        float: left;
+        margin-right: 14px; }
+      .section #bloc_footer .align_bottom .marge_logo {
+        margin-left: 25px;
+        margin-top: 36px;
+        margin-bottom: 10px; }
+      .section #bloc_footer .align_bottom #style_text_payment {
+        color: #616161;
+        margin-left: 29px; }
+      .section #bloc_footer .align_bottom #marge_42 {
+        margin-bottom: 42px; }
+      .section #bloc_footer .align_bottom .marge_copyright {
+        margin-bottom: 23px; }
+      .section #bloc_footer .align_bottom .titre_footer {
+        font-weight: bold; }
+      .section #bloc_footer .align_bottom #center_follow {
+        text-align: center; }
+
+/*---------------------PARTIE FOOTER--------------------*/
+/*---------------------------RESPONSIVE WEB DESIGN--------------------------*/
+@media only screen and (min-width: 312px) and (max-width: 1015px) {
+  #image {
+    width: 55%;
+    margin-left: 20%;
+    margin-top: 52px; }
+
+  /* ----------------------------ON DEFINIT LES LARGEURS DES IMAGES POUR LE RESPONSIVE---------------------------------------*/
+  img[alt="piece_velo"] {
+    width: 100%; }
+
+  img[alt="logo"] {
+    width: 89%;
+    padding-top: 7px; }
+
+  img[alt="menu_hamburger"] {
+    width: 100%; }
+
+  img[alt="parametre"] {
+    width: 45px; }
+    img[alt="parametre"]:hover {
+      cursor: pointer; }
+
+  /* ----------------------------ON DEFINIT LES LARGEURS DES IMAGES POUR LE RESPONSIVE---------------------------------------*/
+  /*---SECTION HEADER RESPONSIVE---*/
+  #header_left {
+    width: 33%; }
+
+  #header_left .nav_gauche:nth-child(2) {
+    width: 23%;
+    border-right: 2px solid #333333;
+    height: 69px; }
+
+  #header_left .nav_gauche:first-child {
+    width: 27%; }
+
+  #header_left .nav_gauche img[alt="loupe"] {
+    margin-left: 0; }
+
+  .header_right {
+    width: 110px;
+    background-color: #1d1d1d;
+    position: absolute;
+    right: 0; }
+
+  /*---SECTION HEADER RESPONSIVE---*/
+  /*---SECTION DESCRIPTIF(WHO WHE ARE) RESPONSIVE---*/
+  .section #bloc_presentation #text {
+    margin-left: 0;
+    float: none;
+    width: 180%; }
+
+  .section #bloc_presentation {
+    width: 100%; }
+
+  .section #bloc_presentation #text {
+    margin-top: 0; }
+
+  .section #bloc_presentation #text #color_black {
+    width: 55%;
+    text-align: center; }
+
+  .section #bloc_presentation #text #title_description {
+    width: 54%;
+    text-align: center; }
+
+  .section #bloc_presentation .style_button {
+    width: 20%;
+    margin-left: 17%; }
+
+  /*----SECTION DESCRIPTIF(WHO WHE ARE) RESPONSIVE---*/
+  /*----SECTION NEWSLETTER AVEC CHAMP DE FORMULAIRE RESPONSIVE ---*/
+  .section #bloc_newsletter {
+    width: 100%; }
+
+  .section #bloc_newsletter #titre_newsletter {
+    font-size: 26px;
+    width: 99%; }
+
+  .section #bloc_newsletter #describe_newsletter {
+    width: 99%; }
+
+  .section #bloc_newsletter #input_newsletter {
+    width: 73%;
+    margin-left: 9%; }
+
+  /*----SECTION NEWSLETTER AVEC CHAMP DE FORMULAIRE RESPONSIVE ---*/
+  /*---PARTIE FOOTER RESPONSILVE---*/
+  .section #bloc_footer {
+    height: 575px; }
+
+  .section #bloc_footer .align_bottom:first-child {
+    width: 100%;
+    margin-left: 0; }
+
+  .section #bloc_footer .align_bottom:nth-child(2) {
+    width: 24%; }
+
+  .section #bloc_footer .align_bottom:last-child {
+    width: 34%; }
+
+  .section #bloc_footer .align_bottom {
+    margin-right: 0; }
+
+  .section #bloc_footer .align_bottom .silver_dark {
+    margin-right: 7%; }
+
+  /*---PARTIE FOOTER RESPONSILVE---*/ }
+/*---NOUVELLE INSTRUCTION POUR LE FOOTER---*/
+@media only screen and (min-width: 312px) and (max-width: 436px) {
+  .section #bloc_footer .align_bottom {
+    float: none; }
+
+  .section #bloc_footer .align_bottom:nth-child(2) {
+    width: 47%;
+    margin-left: 29%; }
+
+  .section #bloc_footer .align_bottom:nth-child(3) {
+    margin-left: 29%; }
+
+  .section #bloc_footer .align_bottom:last-child {
+    width: 62%;
+    margin-left: 17%; }
+
+  .section #bloc_footer .align_bottom #center_follow {
+    margin-left: 26%;
+    text-align: start; } }
+/*---NOUVELLE INSTRUCTION POUR LE FOOTER---*/
+/*-------------ON AFFICHE LA ROUE OU PAS FONCTION DE LA LARGEUR DE L'ECRAN--------------------*/
+@media only screen and (max-width: 1015px) {
+  #desktop {
+    display: none; }
+
+  #mobile {
+    display: block; }
+
+  .visible_switch {
+    display: none; } }
+@media only screen and (min-width: 1016px) {
+  #desktop {
+    display: block; }
+
+  #mobile {
+    display: none; } }
+/*-------------ON AFFICHE LA ROUE OU PAS FONCTION DE LA LARGEUR DE L'ECRAN--------------------*/
+/*-----------INSTRUCTION SUR LE HEADER-----------*/
+@media only screen and (min-width: 1004px) and (max-width: 1016px) {
+  .header_right {
+    width: 11%; } }
+@media only screen and (min-width: 1017px) {
+  #header_left {
+    width: 24%; }
+
+  .header_right {
+    width: 34%; } }
+@media only screen and (min-width: 1917px) {
+  #header_center {
+    margin-right: 12%; }
+
+  .header_right {
+    width: 22%; } }
+/*-----------INSTRUCTION SUR LE HEADER-----------*/
+/*-----------INSTRUCTION SUR LE FOOTER-----------*/
+@media only screen and (min-width: 531px) and (max-width: 1419px) {
+  .section #bloc_footer {
+    height: 482px; } }
+@media only screen and (min-width: 312px) and (max-width: 436px) {
+  .section #bloc_footer {
+    height: 846px; } }
+/*-----------INSTRUCTION SUR LE FOOTER-----------*/
+/*---------------------------RESPONSIVE WEB DESIGN--------------------------*/
+
+/*# sourceMappingURL=style.css.map */
